@@ -1,3 +1,3 @@
 # deployment
 
-currently without encryption
+currently with encryption
