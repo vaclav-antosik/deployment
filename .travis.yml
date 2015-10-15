@@ -1,10 +1,9 @@
 language: node_js
 node_js:
-- "4.1"
+- '4.1'
 env:
   global:
-    - "FTP_ADDRESS=40.127.98.10"
-    - "FTP_USER=ftpuser"
-    - "FTP_PASSWORD=nbu.sr.123"
-after_success:
-    "gulp deploy --address $FTP_ADDRESS --user $FTP_USER --password $FTP_PASSWORD"
+  - FTP_ADDRESS=40.127.98.10
+  - FTP_USER=ftpuser
+  - secure: FMzsM6zZ4/lhNr7UvN2cF5kLzd1BMt8ynmqRXDM7eBA8r6slaHUpNGmD955q9o6D6QcC3RA90d2ECEPaIDUZEeKWcPKvzyZ+OSD2AlIq1ufaLpqWKqAhgjZo+bbujoAIMwtDwq48edGAaw2bE//Ge/O9xObn83USzMWZceNtnT0uZwHB79SqYHQuKqdjvQLz6Mr84G9X73XdJ8Vi8yqXG2x4ceNJ6KDmlWgjPJzjgJ43tlCEkiuhUDkor0Qg4Lqm+XwTPrZyYEfGEFza4xvP5bxE8U1pOEOg6SGNWAhCaGP0013VoIN7alUc73ZMbkQffKOkN3fwKqnkbp0pJVWajEwiK53RD6SJonSDJeOoBy5qtcphTF4GQqFP9Ndhax6VrjKAW8/Tu1Te1/T065LPAoTeE79c2VmeMZ2CJH0bQEP+8D9J/6CfkD8FEI2oRE/kjd7+B2v+zNwVu3PBdAAEVQyGJk1k/7lmObBFgSRg+KpsGFPf5YMNyySOUtg2LmXj+zmDF+zB/NI4Ta1d4DnF1CHJtsHe12xLIz+NAkm9ZT0Xta19Ba3ABG6BzQ1VkVIS4cLRIdu+JYFjPPQJ+igDodRht68SdxQYPv3D4JpRaVZml/YDz5gnsxv5ECexvfA6nzcFN7i2Bjd91lobMlSrD0M4tCoV/hNEOCgHfF6BrlU=
+after_success: gulp deploy --address $FTP_ADDRESS --user $FTP_USER --password $FTP_PASSWORD

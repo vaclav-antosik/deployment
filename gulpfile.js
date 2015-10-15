@@ -9,7 +9,7 @@ gulp.task('deploy', function() {
   var conn = ftp.create({
     host: args.address,
     user: args.user,
-    password: args.password,
+    password: args.password, /*travis encrypt FTP_PASSWORD=*** --add*/
     log: gutil.log
   });
  
