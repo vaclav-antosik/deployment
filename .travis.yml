@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- "4.1"
+env:
+  global:
+    - "FTP_ADDRESS=40.127.98.10"
+    - "FTP_USER=ftpuser"
+    - "FTP_PASSWORD=nbu.sr.123"
+after_success:
+    "gulp deploy --address $FTP_ADDRESS --user $FTP_USER --password $FTP_PASSWORD"

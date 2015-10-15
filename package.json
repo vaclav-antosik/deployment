@@ -1,0 +1,30 @@
+{
+  "name": "deployment",
+  "version": "1.0.0",
+  "description": "deploymnet to ftp server project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaclav-antosik/deployment.git"
+  },
+  "keywords": [
+    "ftp",
+    "server",
+    "deploymnet"
+  ],
+  "author": "Vaclav Antosik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaclav-antosik/deployment/issues"
+  },
+  "homepage": "https://github.com/vaclav-antosik/deployment#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "minimist": "^1.2.0",
+    "vinyl-ftp": "^0.4.5"
+  }
+}
